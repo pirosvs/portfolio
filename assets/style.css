@@ -1,19 +1,44 @@
 * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffeee6;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
-body {
-    background-color: lightblue;
+title {
+    display: none;
+}
+
+@font-face {
+    font-family: FT88;
+    src: url(FT88-Bold.woff);
 }
 
 header {
     background-image: url('./bckgimgunsplash.jpg');
     background-size: 50%;
     background-attachment: fixed;
-    box-sizing: border-box;
-    width: 100%;
+    /* box-sizing: border-box; */
+    margin: -10px;
+    align-items: flex-start;
+    width: 120%;
     height: 20%;
     color: white;
+}
+
+h1{
+    visibility: hidden;
+}
+
+nav {
+    font-family: FT88;
+    font-size: 24px;
+    
+}
+
+body {
+    background-color: rgb(237, 212, 246);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 img {
@@ -22,13 +47,26 @@ img {
 }
 
 li {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     justify-content: center;
+    align-content: space-between;
+    margin-right: 10px;
+    margin-top: 15px;
 }
 
 article {
-    font-size: small;
+    font-size: large;
+    border-radius: 5px;
+    border: 2px solid rgba(232, 102, 236, 0.6);
+    background-image: linear-gradient(
+        rgb(237, 212, 246) 0%,
+        rgba(232, 102, 236, 0.6) 70%,
+        rgb(237, 212, 246) 100% 
+    );
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: nowrap;
 }
 
 footer {
@@ -36,16 +74,13 @@ footer {
     background-color: #ead4f0;
     color: white;
     line-height: 2.4;
-    position:absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
     justify-content: center;
     font-size: smaller;
+    margin-bottom: 0px;
 }
 
-@media screen and (max-width:992px) {
-    #projects article {
+/* @media screen and (max-width:992px) {
+    article {
     width: 50%;
     }
 }
@@ -54,17 +89,30 @@ footer {
     article {
     width: 100%;
     }
-}
+} */
+
 
 #project {
         box-sizing: border-box;
         width: 30%;
         border: 2px solid rgb(227, 243, 255);
-        display: flex;
-        /* flex-wrap: wrap; */
+        /* display: flex;
+        flex-wrap: wrap; */
         /* flex: 1 1 1; */
         justify-content: space-between;
         padding: 15px 0px 5px 20px;
         /* margin: 5px; */
         /* text-align: center; */
+
+}
+
+#float-r {
+    float: right;
+    display: block;
+    text-align: left;
+}
+
+#float-l {
+    float: left;
+    display: inline;
 }
