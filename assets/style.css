@@ -31,6 +31,7 @@ h1{
 
 h2 {
     margin-right: 40px;
+    flex-shrink: 0;
 }
 
 nav {
@@ -45,12 +46,13 @@ body {
 }
 
 img {
-    /* top:50%;
-    left:50%;
-    transform:translate(-50%, -50%); */
     width: 200px;
     height: auto;
     flex-shrink: 0;
+}
+
+.project-img {
+    width: 100%;
 }
 
 li {
@@ -76,7 +78,8 @@ article {
 
 div {
     font-size: large;
-    width: 400px;
+    margin: 10px auto 10px auto;
+    width: 45%;
     border-radius: 5px;
     border: 2px solid rgba(232, 102, 236, 0.6);
     background-image: linear-gradient(
@@ -84,7 +87,6 @@ div {
         rgba(232, 102, 236, 0.6) 70%,
         rgb(237, 212, 246) 100% 
     );
-    margin: 10px;
     padding: 10px;
     flex-wrap: nowrap;
 }
@@ -99,19 +101,15 @@ footer {
     margin-bottom: 0px;
 }
 
-@media screen and (max-width:768px) {
-    article, section, div {
-    width: 100%;
+@media screen and (max-width:992px) {
+   div {
+    width: 75%;
     }
 }
 
-@media screen and (max-width:992px) {
-    section, div {
-    width: 50%;
-    }
-
-    article {
-        width: 100%;
+@media screen and (max-width:768px) {
+    div {
+    width: 100px;
     }
 }
 
