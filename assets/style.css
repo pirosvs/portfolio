@@ -21,7 +21,7 @@ header {
     margin: -10px;
     align-items: flex-start;
     width: 120%;
-    height: 20%;
+    height: 100px;
     color: white;
 }
 
@@ -91,6 +91,10 @@ div {
     flex-wrap: nowrap;
 }
 
+#first-project {
+    width: 100%;
+}
+
 footer {
     width: 60%;
     background-color: #ead4f0;
@@ -109,30 +113,14 @@ footer {
 
 @media screen and (max-width:768px) {
     div {
-    width: 100px;
+    width: 100%;
     }
 }
 
-/* #project {
-        box-sizing: border-box;
-        width: 30%;
-        border: 2px solid rgb(227, 243, 255);
-        display: flex;
-        flex-wrap: wrap;
-        flex: 1 1 1;
-        justify-content: space-between;
-        padding: 15px 0px 5px 20px;
-        margin: 5px;
-        text-align: center;
+.text-center{
+    justify-content: center;
+}
 
-} */
-
-/* .overlay {
-    position: relative;
-    transform: rotate(90deg);
-    margin-top: -25px;
-    border-style: groove;
-    width: 15%;
-    color: violet;
-    background-color: aquamarine;
-} */
+#contact {
+    margin: auto;
+}
