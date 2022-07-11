@@ -95,6 +95,11 @@ div {
     width: 100%;
 }
 
+a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 footer {
     width: 60%;
     background-color: #ead4f0;
