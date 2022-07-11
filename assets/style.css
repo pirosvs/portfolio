@@ -91,6 +91,7 @@ div {
     flex-wrap: nowrap;
 }
 
+/* Meant to let the first project take up more space -- required for an assignment but no longer desired */
 #first-project {
     width: 100%;
 }
